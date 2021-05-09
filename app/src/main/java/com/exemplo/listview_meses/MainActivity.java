@@ -34,7 +34,7 @@ public class MainActivity extends AppCompatActivity {
         ArrayList<String> listaValores = new ArrayList<>(Arrays.asList(valores));
         //Especialista em lidar com Adapter e listas de valores
         ArrayAdapter<String> adapter = new ArrayAdapter<>(this, android.R.layout.simple_list_item_1, listaValores);
-        //Associa o adaptar a lista de visualização
+        //Associa o adapter a lista de visualização
         listView.setAdapter(adapter);
         //Associa evento aos itens da lista
         listView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
